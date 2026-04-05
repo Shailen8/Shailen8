@@ -1,0 +1,179 @@
+{
+  "theme": "light",
+  "archetype": "3 (Pastel & Soft) mixed with 1 (Organic & Earthy)",
+  "color_palette": {
+    "background_primary": "#F8FAFC",
+    "background_secondary": "#F0FDF4",
+    "primary": "#0284C7",
+    "primary_hover": "#0369A1",
+    "secondary": "#22C55E",
+    "text_main": "#0F172A",
+    "text_muted": "#475569",
+    "accent_warm": "#FBBF24"
+  },
+  "typography": {
+    "font_heading": "Outfit, sans-serif",
+    "font_body": "Manrope, sans-serif",
+    "h1": "text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight",
+    "h2": "text-4xl sm:text-5xl font-semibold tracking-tight",
+    "h3": "text-2xl sm:text-3xl font-medium",
+    "body": "text-base lg:text-lg leading-relaxed text-slate-600",
+    "label": "text-sm font-semibold tracking-[0.2em] uppercase text-sky-600"
+  },
+  "layout_spacing": {
+    "section_padding": "py-20 lg:py-32",
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "grid_gap": "gap-8 lg:gap-12"
+  },
+  "components": {
+    "header": {
+      "style": "fixed w-full z-50 backdrop-blur-xl bg-white/70 border-b border-white/20",
+      "logo": "text-2xl font-bold text-slate-900 tracking-tighter"
+    },
+    "button_primary": {
+      "classes": "px-8 py-4 bg-sky-600 text-white rounded-full font-semibold hover:bg-sky-700 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-sky-600/20"
+    },
+    "card": {
+      "classes": "bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow"
+    }
+  },
+  "sections": [
+    {
+      "name": "hero",
+      "description": "90vh full width container with absolute background image and gradient overlay to ensure text readability.",
+      "layout": "Flex column, vertically centered, items-start (left-aligned text).",
+      "overlay": "bg-gradient-to-r from-slate-900/80 via-slate-900/50 to-transparent",
+      "elements": [
+        "H1: Explore Every Destination with a Trusted Local Guide",
+        "Subtitle: Book Local Guides with Vehicles for Safe and Easy Travel",
+        "Primary CTA: Book Your Guide Now"
+      ]
+    },
+    {
+      "name": "about",
+      "description": "Who We Are section.",
+      "layout": "Grid 1 column mobile, 2 columns desktop (gap-16). Asymmetric text and an overlapping image collage on the right.",
+      "elements": [
+        "Label: ABOUT US",
+        "H2: We Make Local Travel Seamless",
+        "Body: Travel With Guide bridges the gap between tourists and authentic local experiences. Whether you need a local expert to accompany you in your vehicle or provide their own to navigate the hidden gems, we are here to make your journey safe and unforgettable."
+      ]
+    },
+    {
+      "name": "how_it_works",
+      "description": "Step-by-step process.",
+      "layout": "Grid 1 col mobile, 4 cols desktop. Generous spacing, large icons.",
+      "elements": [
+        "Step 1: Choose Destination (Icon: MapPin)",
+        "Step 2: Select Guide & Vehicle (Icon: UserPlus)",
+        "Step 3: Confirm Booking (Icon: CalendarCheck)",
+        "Step 4: Enjoy Your Trip (Icon: Smile)"
+      ]
+    },
+    {
+      "name": "services",
+      "description": "Our offerings.",
+      "layout": "Bento Grid (Tetris Mode): 5 items. Mix of col-span-1 and col-span-2 items to create tension and visual interest.",
+      "elements": [
+        "Guide + Customer Vehicle",
+        "Guide + Guide Vehicle (Car)",
+        "Guide + Guide Vehicle (Bike)",
+        "Local Itinerary Planning",
+        "Airport/Station Pickups"
+      ]
+    },
+    {
+      "name": "popular_destinations",
+      "description": "Showcase of 5 destinations using beautiful imagery.",
+      "layout": "Grid layout. 2 large cards on top row, 3 smaller cards on bottom row.",
+      "elements": [
+        "Goa",
+        "Manali",
+        "Jaipur",
+        "Varanasi",
+        "Kerala"
+      ]
+    },
+    {
+      "name": "why_choose_us",
+      "description": "Benefits of the platform.",
+      "layout": "Vertical list with large typography or a clean 2x3 grid.",
+      "elements": [
+        "Verified Local Guides",
+        "Flexible Vehicle Options",
+        "Safe & Secure",
+        "Authentic Experiences",
+        "24/7 Support"
+      ]
+    },
+    {
+      "name": "testimonials",
+      "description": "User reviews.",
+      "layout": "3 columns grid, horizontal scroll on mobile.",
+      "elements": [
+        "3 testimonial cards with avatars, star ratings, and review text."
+      ]
+    },
+    {
+      "name": "cta",
+      "description": "Final push to convert.",
+      "layout": "Full width colored block (bg-sky-50) with massive text and central button.",
+      "elements": [
+        "H2: Ready for your next adventure?",
+        "CTA Button"
+      ]
+    },
+    {
+      "name": "footer",
+      "description": "Bottom footer.",
+      "layout": "Simple 4 column layout.",
+      "elements": [
+        "Brand Name: Travel With Guide",
+        "Founder: Shailendra Bhabar",
+        "Email: shailendrabhabar7@gmail.com",
+        "Social Links, Quick Links"
+      ]
+    }
+  ],
+  "media": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/9943048/pexels-photo-9943048.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "A group of friends observing a scenic mountain view on a sunny day."
+    },
+    "destinations": [
+      {
+        "name": "Goa",
+        "url": "https://images.pexels.com/photos/3754547/pexels-photo-3754547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      },
+      {
+        "name": "Manali",
+        "url": "https://images.unsplash.com/photo-1597167231350-d057a45dc868?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwxfHxNYW5hbGklMjBtb3VudGFpbnN8ZW58MHx8fHwxNzc1NDE4NjIyfDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Jaipur",
+        "url": "https://images.unsplash.com/photo-1661924326425-c14a6426d989?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHxKYWlwdXIlMjBwYWxhY2V8ZW58MHx8fHwxNzc1NDE4NjEzfDA&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "name": "Varanasi",
+        "url": "https://images.pexels.com/photos/36565405/pexels-photo-36565405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      },
+      {
+        "name": "Kerala",
+        "url": "https://images.pexels.com/photos/29988900/pexels-photo-29988900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      }
+    ],
+    "testimonial_avatars": [
+      {
+        "url": "https://images.unsplash.com/photo-1504473114289-43f5e302d6bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMGFkdWx0JTIwdG91cmlzdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3NTQxODYyNnww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1724627559332-014d34204f19?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHx5b3VuZyUyMGFkdWx0JTIwdG91cmlzdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3NTQxODYyNnww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1762341529155-9af340f518f5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwzfHx5b3VuZyUyMGFkdWx0JTIwdG91cmlzdCUyMHBvcnRyYWl0fGVufDB8fHx8MTc3NTQxODYyNnww&ixlib=rb-4.1.0&q=85"
+      }
+    ]
+  },
+  "icon_library": "lucide-react",
+  "instructions_to_main_agent": "Ensure the application is a single page application using Tailwind and pure HTML elements for marketing layouts. Follow the typography hierarchy strictly and use generous paddings. Do not use generic Inter font for headings. Ensure buttons use the hover states described. Testimonial section needs mobile-first responsive layout. Make sure to embed all image URLs precisely without placeholders. Include data-testid on interactive elements. Apply the fonts globally in the layout file. Add smooth scrolling using standard css or framer-motion."
+}
