@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Toaster } from 'sonner';
 import Navbar from './components/Navbar';
@@ -15,6 +15,17 @@ import BookingModal from './components/BookingModal';
 
 function App() {
   const [showBooking, setShowBooking] = useState(false);
+
+  useEffect(() => {
+    const remove = () => {
+      const b = document.getElementById('emergent-badge');
+      if (b) b.remove();
+    };
+    remove();
+    const obs = new MutationObserver(remove);
+    obs.observe(document.body, { childList: true, subtree: true });
+    return () => obs.disconnect();
+  }, []);
 
   return (
     <div className="App overflow-x-hidden" style={{ backgroundColor: '#F8FAFC' }}>
